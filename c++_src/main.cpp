@@ -1,7 +1,7 @@
 #include "IPCSharedMemory.hpp"
 
 int main() {
-    SharedMemoryManager<double> sharedDouble("MySharedMemory");
+    interprocess::SharedMemoryManager<double> sharedDouble("MySharedMemory");
     sharedDouble.create();
    // sharedDouble.lock();
     sharedDouble.update(42.42);
